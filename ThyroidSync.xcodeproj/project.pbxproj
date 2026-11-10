@@ -10,9 +10,22 @@
 		B756DA4730A1D296001BE8B2 /* ThyroidSync.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ThyroidSync.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		B77A903830A2944C005EBF62 /* Exceptions for "ThyroidSync" folder in "ThyroidSync" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = B756DA4630A1D296001BE8B2 /* ThyroidSync */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		B756DA4930A1D296001BE8B2 /* ThyroidSync */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				B77A903830A2944C005EBF62 /* Exceptions for "ThyroidSync" folder in "ThyroidSync" target */,
+			);
 			path = ThyroidSync;
 			sourceTree = "<group>";
 		};
@@ -246,6 +259,7 @@
 				DEVELOPMENT_TEAM = 453B723P8J;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ThyroidSync/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -278,6 +292,7 @@
 				DEVELOPMENT_TEAM = 453B723P8J;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ThyroidSync/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
