@@ -23,11 +23,11 @@ struct LoginWithButtonView: View {
                         .font(.custom("NeueHaasDisplay", size: 17))
                         .foregroundStyle(.white)
                 }
+                .frame(width: 350, height: 50)
+                .background(Color.blue)
+                .clipShape(Capsule())
             }
         )
-        .frame(width: 350, height: 50)
-        .background(Color.blue)
-        .clipShape(Capsule())
     }
 }
 
