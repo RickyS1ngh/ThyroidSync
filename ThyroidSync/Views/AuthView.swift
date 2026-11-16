@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct AuthView: View {
+    @State private var loginSheet = false
     var body: some View {
         ZStack {
             AuthImageView(
@@ -52,8 +53,8 @@ struct AuthView: View {
             Button(
                 action: {},
                 label: {
-                    Text("Sign in")
-                        .font(.custom("NeueHaasDispaly", size: 20))
+                    Text("Sign Up")
+                        .font(.custom("NeueHaasDisplay", size: 17))
                         .foregroundStyle(.white)
                 }
             )
@@ -63,10 +64,12 @@ struct AuthView: View {
             .offset(y: 300)
 
             Button(
-                action: {},
+                action: {
+                    loginSheet.toggle()
+                },
                 label: {
-                    Text("Login")
-                        .font(.custom("NeueHaasDispaly", size: 20))
+                    Text("Log in")
+                        .font(.custom("NeueHaasDisplay", size: 17))
                         .foregroundStyle(.white)
                 }
             )
@@ -74,6 +77,10 @@ struct AuthView: View {
             .background(Color.blue)
             .clipShape(Capsule())
             .offset(y: 360)
+            .sheet(isPresented: $loginSheet){
+                LoginView()
+                    .presentationDetents([.fraction(1)])
+            }
         }
     }
 }
@@ -81,3 +88,4 @@ struct AuthView: View {
 #Preview {
     AuthView()
 }
+
